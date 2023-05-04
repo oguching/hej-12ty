@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/oguching/hej-12ty/issues"
   },
-  "homepage": "https://github.com/oguching/hej-12ty#readme"
+  "homepage": "https://github.com/oguching/hej-12ty#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
 }
