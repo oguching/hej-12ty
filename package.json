@@ -1,0 +1,27 @@
+{
+  "name": "hej-12ty",
+  "version": "1.0.0",
+  "description": "Hej is a simple blog starter site for 11ty.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oguching/hej-12ty.git"
+  },
+  "keywords": [
+    "eleventy",
+    "blog",
+    "starter",
+    "simple",
+    "clean",
+    "lightweight"
+  ],
+  "author": "Oguchi Nzekwe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oguching/hej-12ty/issues"
+  },
+  "homepage": "https://github.com/oguching/hej-12ty#readme"
+}
