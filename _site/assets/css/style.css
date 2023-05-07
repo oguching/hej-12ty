@@ -42,7 +42,7 @@
   h3,
   h4,
   h5 {
-    margin: 3rem 0 1.38rem;
+    margin: 1.6rem 0 1.38rem;
     font-family: "DM Sans", sans-serif;
     line-height: 1.3;
   }
@@ -80,6 +80,7 @@
   }
   
   .container--header {
+    background-size: cover;
     padding: 12rem 0 0 0;
   }
   
@@ -87,14 +88,12 @@
     margin-bottom: 3rem;
   }
 
-  img {
-    width: 100%;
-  }
-  
+
   .profile-pic {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    width: 100%;
+    height: 100%;
     background: url(https://avatarfiles.alphacoders.com/229/229179.jpg);
   }
   
@@ -102,6 +101,10 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+  }
+
+  .post-lists {
+    margin-bottom: 1rem;
   }
   
   .post-list {
@@ -114,27 +117,34 @@
   }
   
   .btn-archives {
-    border: none;
+    background-color: var(--color-secondary-light);
+    border: 0.015em solid #fff;
+    font-family: inherit;
+    font-size: 1.333rem;
     padding: 0.615rem 1.455rem;
     border-radius: 0.215em;
     margin: 2.6rem auto;
     cursor: pointer;
     text-align: center;
     box-shadow: 0 0 #ccc;
-    transition: transform ease 0.5s, box-shadow ease 0.5s;
+    transition: box-shadow ease 0.5s, border ease 0.5s, background-color ease 1.5s;
   }
   
   .btn-archives:hover {
-    box-shadow: 0.15rem 0.15rem #f4511c;
-    transform: translateY(-3px);
+    box-shadow: 0.15rem 0.15rem var(--color-accent);
+    border: 0.015em solid var(--color-accent);
+    background-color: rgb(255, 255, 255);
   }
   
   .btn-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    display: grid;
   }
   
   .footer {
     text-align: center;
     padding: 1rem 0;
   }
+  
