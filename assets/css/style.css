@@ -26,17 +26,17 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-
-
 :root {
-    --color-primary: #282828;
-    --color-secondary: #5b5b66;
-    --color-accent: #f4511c;
-    --color-secondary-light: #f0f0f0;
-    --font-family-sans-serif: "DM Sans", Inter, -apple-system, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
-    --font-size-base: 140%;
-  }
+  --color-body-bg: rgb(247 247 247);
+  --color-primary: rgb(40 40 40);
+  --color-secondary: rgb(91 91 102);
+  --color-secondary-light: rgb(240 240 240);
+  --color-light: rgb(252 255 255);
+  --color-accent: rgb(241, 38, 38);
+  --color-accent-complement: rgb(13, 59, 102);
+  --font-family-sans-serif: "DM Sans", system-ui, sans-serif;
+  --font-size-base: 140%;
+}
   
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -49,47 +49,46 @@ a {
 
 a:hover {
   color: var(--color-accent);
+  text-decoration: none;
 }
 
 body {
-  font-family: var(--font-family-sans-serif);
-  line-height: 1.6;
+  background-color: var(--color-body-bg);
   color: var(--color-primary);
-  font-size: 1.333rem;
+  font-family: var(--font-family-sans-serif);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
 } 
-  
+
   h1,
   h2,
   h3,
   h4,
   h5 {
     margin: 1.6rem 0 1.38rem;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-family-sans-serif);
     line-height: 1.3;
   }
   
   h1 {
-    font-size: 4.209rem;
+    font-size: 3.157rem;
     font-weight: 700;
   }
   
   h2 {
-    font-size: 3.157rem;
-  }
-  
-  h3 {
     font-size: 2.369rem;
   }
   
-  h4 {
+  h3 {
     font-size: 1.777rem;
   }
   
-  h5 {
+  h4 {
     font-size: 1.333rem;
   }
+  
   
 img, 
 picture {
@@ -112,7 +111,6 @@ select {
   }
   
   .container--header {
-    background-size: cover;
     padding: 12rem 0 0 0;
   }
   
@@ -122,7 +120,10 @@ select {
 
 
   .profile-pic {
+    border: 0.2rem solid var(--color-light);
     border-radius: 50%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     max-width: 150px;
     width: 100%;
     height: 100%;
@@ -147,10 +148,14 @@ select {
     color: var(--color-secondary);
     flex: 0 0 auto;
   }
+
+  .muted {
+    color: var(--color-secondary);
+  }
   
   .btn-archives {
-    background-color: var(--color-secondary-light);
-    border: 0.015em solid #fff;
+    background-color: rgb(130, 130, 130, 0.325);
+    border: 0.015em solid var(--color-light);
     font-family: inherit;
     font-size: 1.333rem;
     padding: 0.615rem 1.455rem;
@@ -165,7 +170,7 @@ select {
   .btn-archives:hover {
     box-shadow: 0.15rem 0.15rem var(--color-accent);
     border: 0.015em solid var(--color-accent);
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-light);
   }
   
   .btn-container {
@@ -174,9 +179,38 @@ select {
     justify-content: center;
     width: 100%;
   }
+
+  .about-section {
+    background-color: rgba(255, 255, 255, 90%);
+  padding: 8rem 0;
+  border-top: 2px solid var(--color-light);
+  border-bottom: 2px solid var(--color-light);
+  }
+
+  .about-section div h2 {
+    margin: 0;
+  }
+  
+  .about-section a {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+  
+  .about-section a:hover {
+    color: var(--color-accent);
+  }
   
   .footer {
     text-align: center;
     padding: 1rem 0;
   }
   
+  
+@media screen and (min-width: 485px) {
+  body {
+    line-height: 1.75;
+  }
+  h1 {
+    font-size: calc(4.209rem + 1.2vmin);
+  }
+}
