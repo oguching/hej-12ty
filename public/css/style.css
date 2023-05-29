@@ -33,6 +33,9 @@ html:focus-within {
   --color-secondary-light: rgb(240 240 240);
   --color-light: rgb(252 255 255);
   --color-accent: rgb(241, 38, 38);
+  --color-mastodon: #595aff;
+  --color-twitter: rgb(29, 155, 240);
+  --color-github: #1f2328;
   --color-accent-complement: rgb(13, 59, 102);
   --font-family-sans-serif: "DM Sans", system-ui, sans-serif;
   --font-size-base: 140%;
@@ -220,6 +223,19 @@ select {
     text-align: center;
     padding: 1rem 0;
   }
+
+  .clr-mastodon {
+    color: var(--color-mastodon);
+  }
+  
+  .clr-twitter {
+    color: var(--color-twitter);
+  }
+
+  .clr-github {
+    color: var(--color-github);
+  }
+  
   
   
 @media screen and (min-width: 485px) {

@@ -4,8 +4,8 @@
   "description": "Hej is a simple blog starter site for 11ty.",
   "main": "index.html",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

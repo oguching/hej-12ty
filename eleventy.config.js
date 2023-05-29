@@ -4,6 +4,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget("./public/css/style.css/");
 
     return {
+      markdownTemplateEngine: 'njk',
+      dataTemplateEngine: 'njk',
+      htmlTemplateEngine: 'njk',
       dir: {
         //input: "src",
         includes: "_includes",
