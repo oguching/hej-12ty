@@ -137,3 +137,5 @@ Thumbs.db
 .sass-cache
 .env
 _site
+public
+dist
