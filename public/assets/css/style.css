@@ -220,6 +220,7 @@ select {
   }
   
   .footer {
+    font-size: 80%;
     text-align: center;
     padding: 1rem 0;
   }
