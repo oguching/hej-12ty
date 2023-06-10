@@ -11,9 +11,26 @@
     <title>{{ title }}</title>
 </head>
 <body>
-{{ content | safe }}
+    <section class="container">
+        <header class="container--header">
+            <a href="/">Home</a>
+            <h2>{{ title }}</h2>
+            <div>
+                <p class="muted">{{ page.date.toDateString() }} | tags: {{ tags }}</p>
+            </div>
+        </header>
+        {{ content | safe }}
+    </section>
+
+    <footer class="footer container">
+        <small class="muted">&copy; 2023. Oguchi Nzekwe &sdot;
+          <a href="https://mastodon.social/@oguching" class="clr-mastodon">Mastodon</a> &sdot;
+          <a href="https://twitter.com/oguching" class="clr-twitter">Twitter</a> &sdot;
+          <a href="https://github.com/oguching" class="clr-github">Github</a>
+        </small>
+      </footer>
+
+
 </body>
-<footer>
-<a href="/">Go back home</a>
-</footer>
+
 </html>

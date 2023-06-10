@@ -1,11 +1,7 @@
 ---
 title: Uncovering the Vibrant Underground.
-pub-date: "Feb 9, 2023"
 tags: "music"
 ---
-
-## {{ title }}
-{{ pub-date }} | tags: {{ tags }}
 
 For many music lovers, the appeal of independent or “underground” music lies in its raw energy and unique sound. Unlike popular, mainstream music that is heavily influenced by commercial interests, underground music is often made by musicians who are driven by a passion for their craft and a desire to push the boundaries of what is considered “normal.” In this blog post, we will take a closer look at the world of underground music and why it is so appealing to music enthusiasts.
 

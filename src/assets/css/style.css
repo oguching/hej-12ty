@@ -38,7 +38,7 @@ html:focus-within {
   --color-github: #1f2328;
   --color-accent-complement: rgb(13, 59, 102);
   --font-family-sans-serif: "DM Sans", system-ui, sans-serif;
-  --font-size-base: 140%;
+  --font-size-base: 130%;
 }
   
 a:not([class]) {
@@ -90,6 +90,10 @@ body {
   h4 {
     font-size: 1.333rem;
   }
+
+  p + p {
+    margin-bottom: 1.2rem;
+  }
   
   
 img, 
@@ -107,7 +111,7 @@ select {
   
   .container {
     width: 100%;
-    max-width: 40rem;
+    max-width: 42rem;
     margin-inline: auto;
     padding: 0 1.5rem;
   }
@@ -245,5 +249,8 @@ select {
   }
   h1 {
     font-size: calc(4.209rem + 1.2vmin);
+  }
+  h2 {
+    font-size: calc(3.157rem + 1.2vmin);
   }
 }
