@@ -1,0 +1,21 @@
+{
+	"title": "Site title",
+	"url": "https://example.com",
+	"language": "en",
+	"description": "Tokyo, Japan and everything Anime",
+	"feed": {
+		"subtitle": "Tokyo, Japan and everything Anime. Yosh!",
+		"filename": "feed.xml",
+		"path": "/feed/feed.xml",
+		"id": "https://example.com"
+	},
+	"jsonfeed": {
+		"path": "/feed/feed.json",
+		"url": "https://example.com/feed/feed.json"
+	},
+	"author": {
+		"name": "Oguchi Nzekwe",
+		"email": "oguchi@oguching.com",
+		"url": "https://oguching.com"
+	}
+}

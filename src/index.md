@@ -1,6 +1,6 @@
 ---
 title: Hello Tokyo
-layout: layouts/base.njk
+layout: layouts/home.njk
 ---
 
 # Hello world

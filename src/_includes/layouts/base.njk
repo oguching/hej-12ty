@@ -7,59 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hej is a simple starter for 11ty" />
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
-    <title>{{ title }}</title>
+    <title>{{ title or metadata.title }}</title>
 </head>
 <body>
-    <header class="container">
-        <div class="container--header">
-          <a href="#">
-            <img class="profile-pic" src="./assets/img/profile-pic-girl-in-hat.jpg"></img>
-          </a>
-        </div>
-        <h1 class="">{{ title }}</h1>
-      </header>
-
-      <section class="container container--content">
-        <div class="split post-lists">
-          <div class="post-list"><a href="#">
-              Exploring the Power of Music: How it Affects our Emotions.</a>
-          </div>
-          <div>Apr 3</div>
-        </div>
-      
-        <div class="split post-lists">
-          <div class="post-list"><a href="#">
-              Discovering Hidden Treasures</a>
-          </div>
-          <div>Mar 15</div>
-        </div>
-      
-        <div class="split post-lists">
-          <div class="post-list"><a href="/pages/uncovering-the-vibrant-underground">
-              Uncovering the Vibrant Underground.</a>
-          </div>
-          <div>Feb 9</div>
-        </div>
-        <div class="btn-container">
-          <button class="btn-archives">Archives</button>
-        </div>
-      
-      </section>
-
-      <section class="about-section">
-        <div class="container">
-          <h2>About</h2>
-          <p>A brief note about me. <a href="#">Read more &rarr;</a></p>
-        </div>
-      </section>
-      
-      <footer class="footer container">
-        <small class="muted">&copy; 2023. Oguchi Nzekwe &sdot;
-          <a href="https://mastodon.social/@oguching" class="clr-mastodon">Mastodon</a> &sdot;
-          <a href="https://twitter.com/oguching" class="clr-twitter">Twitter</a> &sdot;
-          <a href="https://github.com/oguching" class="clr-github">Github</a>
-        </small>
-      </footer>
+    
+ {{ content | safe }}
+  
+  <footer class="footer container">
+    <small class="muted">&copy; 2023. Oguchi Nzekwe &sdot;
+      <a href="https://mastodon.social/@oguching" class="clr-mastodon">Mastodon</a> &sdot;
+      <a href="https://twitter.com/oguching" class="clr-twitter">Twitter</a> &sdot;
+      <a href="https://github.com/oguching" class="clr-github">Github</a>
+    </small>
+  </footer>
 </body>
 </html>
