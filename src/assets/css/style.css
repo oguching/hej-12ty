@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body,
 h1,
 h2,
@@ -32,11 +36,11 @@ html:focus-within {
   --color-secondary: rgb(91 91 102);
   --color-secondary-light: rgb(240 240 240);
   --color-light: rgb(252 255 255);
-  --color-accent: rgb(241, 38, 38);
+  --color-accent: rgb(241 38 38);
   --color-mastodon: #595aff;
-  --color-twitter: rgb(29, 155, 240);
+  --color-twitter: rgb(29 155 240);
   --color-github: #1f2328;
-  --color-accent-complement: rgb(13, 59, 102);
+  --color-accent-complement: rgb(13 59 102);
   --font-family-sans-serif: "DM Sans", system-ui, sans-serif;
   --font-size-base: 130%;
 }
@@ -60,7 +64,9 @@ body {
   font-family: var(--font-family-sans-serif);
   font-size: var(--font-size-base);
   line-height: 1.6;
-  min-height: 100vh;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
   text-rendering: optimizeSpeed;
 } 
 
@@ -91,10 +97,10 @@ body {
     font-size: 1.333rem;
   }
 
-  p + p {
-    margin-bottom: 1.2rem;
-  }
-  
+p {
+  margin-bottom: 1.2rem;
+}
+
   
 img, 
 picture {
@@ -109,12 +115,12 @@ select {
   font: inherit;
 }
   
-  .container {
-    width: 100%;
-    max-width: 42rem;
-    margin-inline: auto;
-    padding: 0 1.5rem;
-  }
+.container {
+  width: 100%;
+  max-width: 45rem;
+  margin-inline: auto;
+  padding: 0 1.5rem;
+}
   
   .container--header {
     padding: 12rem 0 0 0;

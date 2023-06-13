@@ -3,6 +3,7 @@ layout: layouts/base.njk
 ---
 
 <section class="container">
+    <article>
         <header class="container--header">
             <a href="/">Home</a>
             <h2>{{ title }}</h2>
@@ -10,5 +11,8 @@ layout: layouts/base.njk
                 <p class="muted">{{ page.date.toDateString() }} | tags: {{ tags }}</p>
             </div>
         </header>
-        {{ content | safe }}
-    </section>
+
+    {{ content | safe }}
+    
+    </article>
+</section>
