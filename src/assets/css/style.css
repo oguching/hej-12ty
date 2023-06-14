@@ -34,13 +34,14 @@ html:focus-within {
   --color-body-bg: rgb(247 247 247);
   --color-primary: rgb(40 40 40);
   --color-secondary: rgb(91 91 102);
-  --color-secondary-light: rgb(240 240 240);
+  --color-secondary-light: hsla(40 10% 70% / 10%);
   --color-light: rgb(252 255 255);
   --color-accent: rgb(241 38 38);
   --color-mastodon: #595aff;
   --color-twitter: rgb(29 155 240);
   --color-github: #1f2328;
   --color-accent-complement: rgb(13 59 102);
+  --border-radius: 0.215em;
   --font-family-sans-serif: "DM Sans", system-ui, sans-serif;
   --font-size-base: 130%;
 }
@@ -98,9 +99,13 @@ body {
   }
 
 p {
-  margin-bottom: 1.2rem;
+  margin-block-start: 1.75rem;
 }
 
+p a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
   
 img, 
 picture {
@@ -113,6 +118,26 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+blockquote {
+  background: var(--color-secondary-light);
+  border-left: 0.25em solid grey;
+  border-radius: var(--border-radius);
+  font-style: italic;
+  padding: 0.5em;
+  margin: 1.5em 0.5em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+hr {
+  border-style: solid;
+  border-color: var(--color-secondary-light);
+  margin-block-end: 0.5em;
+  margin-block-start: 0.5em;
 }
   
 .container {
@@ -171,7 +196,7 @@ select {
     font-family: inherit;
     font-size: 1.333rem;
     padding: 0.615rem 1.455rem;
-    border-radius: 0.215em;
+    border-radius: var(--border-radius);
     margin: 2.6rem auto;
     cursor: pointer;
     text-align: center;
@@ -192,12 +217,12 @@ select {
     width: 100%;
   }
 
-  .about-section {
-    background-color: rgba(255, 255, 255, 90%);
+.about-section {
+  background-color: rgba(255, 255, 255, 90%);
   padding: 8rem 0;
   border-top: 2px solid var(--color-light);
   border-bottom: 2px solid var(--color-light);
-  }
+}
 
   .about-section div h2 {
     margin: 0;
@@ -213,11 +238,11 @@ select {
   }
 
   .about-section a:visited {
-    color: var(--color-secondary)
+    color: var(--color-secondary);
   }
 
   .about-section a:focus {
-    background: var(--color-accent-complement)
+    background: transparent;
   }
   
   .about-section a:hover {

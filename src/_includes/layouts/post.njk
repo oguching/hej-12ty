@@ -7,9 +7,7 @@ layout: layouts/base.njk
         <header class="container--header">
             <a href="/">Home</a>
             <h2>{{ title }}</h2>
-            <div>
-                <p class="muted">{{ page.date.toDateString() }} | tags: {{ tags }}</p>
-            </div>
+            
         </header>
 
     {{ content | safe }}
