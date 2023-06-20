@@ -7,10 +7,29 @@ layout: layouts/base.njk
         <header class="container--header">
             <a href="/">Home</a>
             <h2>{{ title }}</h2>
-            
+            <p> {{ date.toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            }) }}</p>
         </header>
 
     {{ content | safe }}
     
     </article>
+
+    <div style=" color: hotpink;">
+        {% if pagination.previousPageLink %}
+            <div><a href="{{ pagination.previousPageHref }}">Previous</a></div>
+        {% else %}
+            <div>Previouso</div>
+        {% endif %}
+        {% if pagination.NextPageLink %}
+            <div><a href="{{ pagination.nextPageHref }}">Next</a></div>
+        {% else %}
+            <div>Next</div>
+        {% endif %}
+       
+    </div>
 </section>

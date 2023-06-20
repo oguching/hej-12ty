@@ -1,11 +1,14 @@
 ---
 title: Discovering Hidden Treasures
+date: 2023-03-15
 tags: adventure
 ---
 
 Everyone loves a good treasure hunt. The excitement of searching for something valuable that may have been long forgotten or overlooked is something that appeals to people of all ages. And the good news is that you don’t have to be a pirate or an adventurer to experience the thrill of discovery. In this blog post, we will be exploring the concept of hidden treasures and how you can discover them in your own life.
 
 One of the most fascinating aspects of hidden treasures is that they can come in many different forms. They could be physical items, such as antique coins or rare collectibles. They could also be intangible, such as a long-forgotten skill or talent, or a special relationship that you have overlooked.
+
+![Asian girl smiling and wearing a hat](/assets/img/profile-pic-girl-in-hat.jpg)
 
 The key to discovering hidden treasures is to keep an open mind and look beyond the surface. You never know what valuable discoveries you may make simply by taking a closer look or trying something new.
 

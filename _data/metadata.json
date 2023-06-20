@@ -1,10 +1,10 @@
 {
-	"title": "Site title",
+	"title": "Hello, Tokyo",
 	"url": "https://example.com",
 	"language": "en",
-	"description": "Tokyo, Japan and everything Anime",
+	"description": "Hello, Tokyo. A clean and simple Eleventy Starter Site.",
 	"feed": {
-		"subtitle": "Tokyo, Japan and everything Anime. Yosh!",
+		"subtitle": "Hello, Tokyo. A clean and simple Eleventy Starter Site.",
 		"filename": "feed.xml",
 		"path": "/feed/feed.xml",
 		"id": "https://example.com"
