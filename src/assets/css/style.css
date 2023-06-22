@@ -99,7 +99,11 @@ body {
   }
 
 p {
-  margin-block-start: 1.75rem;
+  margin-block-start: 0.75rem;
+}
+
+article p + p {
+  margin-block-start: 1.5rem;
 }
 
 p a {
@@ -173,7 +177,7 @@ hr {
     max-width: 150px;
     width: 100%;
     height: 100%;
-    background: url("./public/img/profile-pic-girl-in-hat.jpg");
+    background: url("../img/profile-pic-girl-in-hat.jpg");
   }
   
   .split {
@@ -281,7 +285,13 @@ hr {
     color: var(--color-github);
   }
   
-  
+.p0 {
+  padding: 0;
+}
+
+.m0 {
+  margin: 0;
+}
   
 @media screen and (min-width: 485px) {
   body {

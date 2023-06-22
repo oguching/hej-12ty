@@ -7,12 +7,12 @@ layout: layouts/base.njk
         <header class="container--header">
             <a href="/">Home</a>
             <h2>{{ title }}</h2>
-            <p> {{ date.toLocaleDateString('en-US', {
+            <time> {{ date.toLocaleDateString('en-US', {
                 weekday: 'long',
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
-            }) }}</p>
+            }) }}</time>
         </header>
 
     {{ content | safe }}
