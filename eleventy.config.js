@@ -1,7 +1,7 @@
 const pluginImages = require("./eleventy.config.images.js");
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("src/assets/");
+    eleventyConfig.addPassthroughCopy("/assets/");
     eleventyConfig.addWatchTarget("src/assets/");
 
     // plugins
