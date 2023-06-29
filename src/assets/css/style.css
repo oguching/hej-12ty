@@ -185,6 +185,20 @@ hr {
     justify-content: space-between;
   }
 
+  .nav--list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+nav ul {
+  padding-inline-start: 0px;
+}
+  li {
+    list-style: none;
+  }
+
   .post-lists {
     margin-bottom: 1rem;
   }

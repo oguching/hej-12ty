@@ -3,4 +3,5 @@ layout: "layouts/page.njk"
 ---
 
 ## Now
-A now page
+
+What I am doing now

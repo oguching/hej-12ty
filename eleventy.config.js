@@ -1,6 +1,8 @@
 const pluginImages = require("./eleventy.config.images.js");
 
 module.exports = function(eleventyConfig) {
+  // passthrough must be relative values from the root.
+  // there's no relationship with input
     eleventyConfig.addPassthroughCopy("./src/assets/css/");
     eleventyConfig.addPassthroughCopy("./src/assets/img/")
     eleventyConfig.addWatchTarget("assets");
@@ -14,7 +16,7 @@ module.exports = function(eleventyConfig) {
       htmlTemplateEngine: 'njk',
       dir: {
         input: "src",
-        // output: "_site",
+        output: "_site",          // this is optional since the default is _site
         includes: "_includes",
         // data: "../_data"
       }
