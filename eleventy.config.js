@@ -1,8 +1,11 @@
+const pluginImages = require("./eleventy.config.images.js");
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("./src/assets/css/");
-    eleventyConfig.addPassthroughCopy("./src/assets/img/");
-    eleventyConfig.addWatchTarget("./src/assets/css/");
+    eleventyConfig.addPassthroughCopy("src/assets/");
+    eleventyConfig.addWatchTarget("src/assets/");
+
+    // plugins
+    eleventyConfig.addPlugin(pluginImages);
 
     return {
       markdownTemplateEngine: 'njk',
@@ -10,8 +13,9 @@ module.exports = function(eleventyConfig) {
       htmlTemplateEngine: 'njk',
       dir: {
         input: "src",
-        output: "_site",
-        data: "_data"
+        // output: "_site",
+        includes: "_includes",
+        // data: "../_data"
       }
     }
   };

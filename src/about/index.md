@@ -23,7 +23,9 @@ That was a bearly visible horizontal line.
 ### Images
 Now on to images, how will we still them?
 
+
 ![Asian girl smiling and wearing a hat](/assets/img/profile-pic-girl-in-hat.jpg)
+
 
 Looking good.
 Now how about code?
