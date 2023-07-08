@@ -1,4 +1,5 @@
 const pluginImages = require("./eleventy.config.images.js");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
   // passthrough must be relative values from the root.
@@ -9,6 +10,7 @@ module.exports = function(eleventyConfig) {
 
     // plugins
     eleventyConfig.addPlugin(pluginImages);
+    eleventyConfig.addPlugin(syntaxHighlight);
 
     return {
       markdownTemplateEngine: 'njk',

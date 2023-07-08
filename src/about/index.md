@@ -32,7 +32,7 @@ Now how about code?
 
 ### Code
 
-```JavaScript
+```js
 	let const meaningOfLife = 42;
 
 	console.log(meaningOfLife);
