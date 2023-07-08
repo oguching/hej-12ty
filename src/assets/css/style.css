@@ -44,6 +44,7 @@ html:focus-within {
   --border-radius: 0.215em;
   --font-family-sans-serif: "DM Sans", system-ui, sans-serif;
   --font-size-base: 130%;
+  --font-family-monospace: font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
   
 a:not([class]) {
@@ -150,6 +151,17 @@ hr {
   margin-block-end: 0.5em;
   margin-block-start: 0.5em;
   width: 20%;
+}
+
+pre{
+  font-family: var(--font-family-monospace);
+  overflow-x: auto;
+  tab-size: 4;
+  padding: 0;
+}
+
+pre[data-lang]::before { 
+  content: attr(data-lang); display: block; 
 }
   
 .container {
