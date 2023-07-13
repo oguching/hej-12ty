@@ -5,7 +5,14 @@ layout: layouts/base.njk
 <section class="container">
     <article>
         <header class="container--header">
-            <a href="/">Home</a>
+            <nav>
+                <ul class="nav--list">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            
             <h2>{{ title }}</h2>
             <time> {{ date.toLocaleDateString('en-US', {
                 weekday: 'long',

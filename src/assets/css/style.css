@@ -44,7 +44,6 @@ html:focus-within {
   --border-radius: 0.215em;
   --font-family-sans-serif: "DM Sans", system-ui, sans-serif;
   --font-size-base: 130%;
-  --font-family-monospace: font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
   
 a:not([class]) {
@@ -154,10 +153,10 @@ hr {
 }
 
 pre{
-  font-family: var(--font-family-monospace);
   overflow-x: auto;
   tab-size: 4;
   padding: 0;
+  white-space: pre-wrap;
 }
 
 pre[data-lang]::before { 
@@ -180,16 +179,16 @@ pre[data-lang]::before {
 }
 
 
-  .profile-pic {
-    border: 0.2rem solid var(--color-light);
-    border-radius: 50%;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    max-width: 150px;
-    width: 100%;
-    height: 100%;
-    background: url("/assets/img/profile-pic-girl-in-hat.jpg");
-  }
+.profile-pic {
+  border: 0.2rem solid var(--color-light);
+  border-radius: 50%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+  0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/img/profile-pic-girl-in-hat.jpg");
+}
   
   .split {
     display: flex;

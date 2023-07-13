@@ -33,8 +33,12 @@ Now how about code?
 ### Code
 
 ```js
-	let const meaningOfLife = 42;
+	function foo(bar) {
+		const meaningOfLife = 42;
+		const lives = 1;
 
-	console.log(meaningOfLife);
-	// logs 42
+		return meaningOfLife + bar(lives);
+	}
+
+	console.log(foo(bar))
 ```
