@@ -291,6 +291,10 @@ nav ul li {
   .about-section a:active {
     color: var(--color-accent-complement)
   }
+
+.nav-links {
+  font-size: 80%;
+}
   
   .footer {
     font-size: 80%;
