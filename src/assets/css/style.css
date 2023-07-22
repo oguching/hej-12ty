@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body,
 h1,
 h2,
@@ -152,17 +148,11 @@ hr {
   width: 20%;
 }
 
-pre{
-  overflow-x: auto;
-  tab-size: 4;
-  padding: 0;
-  white-space: pre-wrap;
+pre {
+  font-family: monospace, monospace; 
+  font-size: 1em; 
 }
 
-pre[data-lang]::before { 
-  content: attr(data-lang); display: block; 
-}
-  
 .container {
   width: 100%;
   max-width: 48rem;

@@ -42,3 +42,10 @@ Now how about code?
 
 	console.log(foo(bar))
 ```
+
+### Layout Overflow
+For some reason, having the pre tag on this page causes the page to overflow and not be contained in the container width. For the life of me I can't figure out why this happens. I only know that when I remove the pre tag everything works as it should.
+
+On desktop it looks fine, but on my phone it overflows sideways.
+
+This is driving me crazy.
